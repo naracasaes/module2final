@@ -1,0 +1,17 @@
+select count(distinct user_id)
+  from gri.estudiantes
+ where edad >= 30;
+
+select user_id, nombres, color
+  from gri.estudiantes
+ where color like 'amarillo';
+
+select user_id, nombres, edad
+  from gri.estudiantes
+ where edad >=30 and edad <= 50;
+
+DROP TABLE gri.estudiantes;
+
+select user_id, nombres, cumpleanos_esc
+  from gri.estudiantes
+ where cumpleanos_esc != '2023-01-10';
